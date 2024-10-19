@@ -9,14 +9,11 @@ color(){
         green)
             echo -e "\033[32m$2\033[0m"
         ;;
-	purple)
-	    echo -e "\033[35m$2\033[0m"
-	;;
+        purple)
+            echo -e "\033[35m$2\033[0m"
+        ;;
     esac
 }
-
-
-
 
 curl -O https://ghproxy.com/https://raw.githubusercontent.com//archlinux-installer/main/pacman.conf && mv pacman.conf /etc/pacman.conf
 echo 'Server = https://opentuna.cn/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
